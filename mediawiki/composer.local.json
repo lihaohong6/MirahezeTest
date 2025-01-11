@@ -1,0 +1,13 @@
+{
+    "require": {
+        "mediawiki/comment-streams": "8.0.2"
+    },
+    "extra": {
+        "merge-plugin": {
+            "include": [
+                "extensions/*/composer.json",
+                "skins/*/composer.json"
+            ]
+        }
+    }
+}

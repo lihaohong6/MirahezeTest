@@ -1,0 +1,33 @@
+name: mh-test
+services:
+  mediawiki:
+    build: ./mediawiki
+    container_name: mediawiki
+    restart: always
+    ports:
+      - 8080:80
+    links:
+      - database
+    volumes:
+      - images:/var/www/html/images
+      # After initial setup, download LocalSettings.php to the same directory as
+      # this yaml and uncomment the following line and use compose to restart
+      # the mediawiki service
+      - ./init.sh:/var/www/html/init.sh
+      - ./LocalSettings.php:/var/www/html/LocalSettings2.php
+  # This key also defines the name of the database host used during setup instead of the default "localhost"
+  database:
+    image: mariadb:10.11.10-ubi9
+    container_name: mariadb
+    restart: always
+    environment:
+      MYSQL_DATABASE: my_wiki
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+    volumes:
+      - db:/var/lib/mysql
+
+volumes:
+  images:
+  db:
