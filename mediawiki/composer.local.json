@@ -1,6 +1,6 @@
 {
     "require": {
-        "mediawiki/comment-streams": "8.0.2",
+        "mediawiki/comment-streams": "dev-master#0cfc9dc98893f5b7819caf91af2916a261e85eff",
         "mediawiki/anti-spoof": "dev-REL1_42"
     },
     "extra": {
