@@ -8,7 +8,7 @@ php maintenance/run.php update.php --quick
 
 # install CheckUser
 cd $MW_HOME/extensions
-git clone -b REL1_42 https://gerrit.wikimedia.org/r/mediawiki/extensions/CheckUser
+git clone -b REL1_43 https://gerrit.wikimedia.org/r/mediawiki/extensions/CheckUser
 composer update --no-dev
 
 # install other extensions from composer.local.json

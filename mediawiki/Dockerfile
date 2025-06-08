@@ -1,4 +1,4 @@
-FROM mediawiki:1.42.4
+FROM mediawiki:1.43.1
 
 # zip is needed for composer; vim is needed to edit files temporarily
 RUN apt-get update && apt-get -y install zip vim

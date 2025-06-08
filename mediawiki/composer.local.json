@@ -1,7 +1,7 @@
 {
     "require": {
-        "mediawiki/comment-streams": "dev-master#0cfc9dc98893f5b7819caf91af2916a261e85eff",
-        "mediawiki/anti-spoof": "dev-REL1_42"
+        "mediawiki/comment-streams": "dev-REL1_43",
+        "mediawiki/anti-spoof": "dev-REL1_43"
     },
     "extra": {
         "merge-plugin": {
