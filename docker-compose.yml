@@ -13,9 +13,9 @@ services:
       # After initial setup, download LocalSettings.php to the same directory as
       # this yaml and uncomment the following line and use compose to restart
       # the mediawiki service
-      - ./mediawiki/init.sh:/var/www/html/init.sh
+      - ./mediawiki/init.sh:/var/www/html/init.sh:z
       - ./mediawiki/composer.local.json:/var/www/html/composer.local.json
-      - ./mediawiki/LocalSettings.php:/var/www/html/LocalSettings2.php
+      - ./mediawiki/LocalSettings.php:/var/www/html/LocalSettings2.php:z
   # This key also defines the name of the database host used during setup instead of the default "localhost"
   database:
     image: mariadb:10.11.10-ubi9
