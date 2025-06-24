@@ -5,9 +5,14 @@ $wgScriptPath = "";
 $wgMainCacheType = CACHE_NONE;
 $wgCacheDirectory = false;
 
+wfLoadExtension( 'AntiSpoof' );
+
 wfLoadExtension( 'CheckUser' );
 $wgCommentStreamsAllowedNamespaces = [0];
 $wgAllowDisplayTitle = true;
 $wgRestrictDisplayTitle = false;
+
+wfLoadExtension( 'ManageWiki' );
+wfLoadExtension( 'CreateWiki' );
 
 $wgShowExceptionDetails = true;
