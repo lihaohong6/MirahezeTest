@@ -9,7 +9,7 @@ php maintenance/run.php update.php --quick
 # install CheckUser
 cd $MW_HOME/extensions
 for extension in CheckUser Echo Scribunto; do
-  git clone -b REL1_43 https://gerrit.wikimedia.org/r/mediawiki/extensions/"$extension"
+  git clone -b REL1_44 https://gerrit.wikimedia.org/r/mediawiki/extensions/"$extension"
 done
 composer update --no-dev
 

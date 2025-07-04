@@ -86,8 +86,8 @@ RUN set -eux; \
 	chown -R www-data:www-data /var/www/data
 
 # Version
-ENV MEDIAWIKI_MAJOR_VERSION 1.43
-ENV MEDIAWIKI_VERSION 1.43.1
+ENV MEDIAWIKI_MAJOR_VERSION=1.44
+ENV MEDIAWIKI_VERSION=1.44.0
 
 # MediaWiki setup
 RUN set -eux; \
@@ -119,7 +119,6 @@ RUN set -eux; \
 	rm -rf /var/lib/apt/lists/*
 
 CMD ["apache2-foreground"]
-
 
 # zip is needed for composer; vim is needed to edit files temporarily
 RUN apt-get update && apt-get -y install zip vim fish ripgrep

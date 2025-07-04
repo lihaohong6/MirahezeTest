@@ -1,7 +1,7 @@
 {
     "require": {
-        "mediawiki/comment-streams": "dev-REL1_43",
-        "mediawiki/anti-spoof": "dev-REL1_43",
+        "mediawiki/comment-streams": "dev-REL1_44",
+        "mediawiki/anti-spoof": "dev-REL1_44",
         "miraheze/create-wiki": "dev-main",
         "miraheze/manage-wiki": "dev-main",
         "miraheze/wiki-discover": "dev-main"
