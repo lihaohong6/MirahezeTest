@@ -3,7 +3,8 @@
         "mediawiki/comment-streams": "dev-REL1_43",
         "mediawiki/anti-spoof": "dev-REL1_43",
         "miraheze/create-wiki": "dev-main",
-        "miraheze/manage-wiki": "dev-main"
+        "miraheze/manage-wiki": "dev-main",
+        "miraheze/wiki-discover": "dev-main"
     },
     "extra": {
         "merge-plugin": {
