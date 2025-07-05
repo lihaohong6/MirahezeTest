@@ -40,5 +40,6 @@ $wgGroupPermissions['bureaucrat']['createwiki'] = true;
 wfLoadExtension( 'WikiDiscover' );
 
 wfLoadExtension( 'CommentStreams' );
+wfLoadExtension( 'MultiBoilerplate' );
 
 $wgShowExceptionDetails = true;

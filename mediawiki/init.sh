@@ -8,7 +8,7 @@ php maintenance/run.php update.php --quick
 
 # install CheckUser
 cd $MW_HOME/extensions
-for extension in CheckUser Echo Scribunto; do
+for extension in CheckUser Echo Scribunto MultiBoilerplate; do
   git clone -b REL1_44 https://gerrit.wikimedia.org/r/mediawiki/extensions/"$extension"
 done
 composer update --no-dev
