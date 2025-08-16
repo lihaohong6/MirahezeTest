@@ -7,6 +7,7 @@ $wgCacheDirectory = false;
 
 wfLoadExtension( 'AntiSpoof' );
 wfLoadExtension( 'Echo' );
+wfLoadExtension( 'WikiEditor' );
 wfLoadExtension( 'Scribunto' );
 $wgScribuntoDefaultEngine = 'luastandalone';
 
@@ -31,6 +32,8 @@ $wgManageWikiExtensionsDefault = [
         'urlshortener',
         'wikiseo',
 ];
+$wgGroupPermissions['bureaucrat']['managewiki-namespaces'] = true;
+$wgGroupPermissions['bureaucrat']['managewiki-settings'] = true;
 
 wfLoadExtension( 'CreateWiki' );
 $wgCreateWikiCacheDirectory = "/var/www/html/cache";
@@ -41,5 +44,7 @@ wfLoadExtension( 'WikiDiscover' );
 
 wfLoadExtension( 'CommentStreams' );
 wfLoadExtension( 'MultiBoilerplate' );
+wfLoadExtension( 'MsUpload' );
+$wgEnableUploads = true;
 
 $wgShowExceptionDetails = true;
